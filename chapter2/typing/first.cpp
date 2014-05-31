@@ -8,5 +8,6 @@ int main() {
   char my_name[] = "Eric Schles";
   cout << static_cast<char>(c);
   cout << my_name;
+  cout << "Testing this " " out";
   return 0;
 }
