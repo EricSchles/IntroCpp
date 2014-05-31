@@ -1,0 +1,21 @@
+#include <iostream>
+#include <typeinfo>
+using namespace std;
+
+int main() {
+
+  char c = 0;
+  int si = 0;
+  unsigned int ui = 0;
+  double d = 0;
+  float f = 0;
+  d = ui = si = c = f;
+  if (typeid(f + f) == typeid(float)) {
+    cout << "type of (float + float) is float";
+  }
+  if (typeid(f*f) == typeid(float)) {
+    cout << "type of (float * float) is float";
+  }
+  cin.ignore();
+  return 0;
+}
